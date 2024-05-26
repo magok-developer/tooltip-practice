@@ -1,38 +1,57 @@
 .App {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  width: 200px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tooltip-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 300px;
+  width: 225px;
+  height: 125px;
+  background: #eeeeee;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tooltip-row {
+  position: absolute;
   display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.tooltip-row.top {
+  top: -35px;
+}
+.tooltip-row.right {
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  right: -100%;
+}
+.tooltip-row.bottom {
+  bottom: -100%;
+}
+.tooltip-row.left {
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  right: 100%;
+}
+
+.tooltip-button {
+  padding: 10px 20px;
+  background-color: #20b2aa;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tooltip-button:hover {
+  background-color: #178f84;
 }
