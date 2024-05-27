@@ -6,20 +6,16 @@ React + TypeScript로 Tooltip 컴포넌트 구현하였으며, 다양한 위치 
 
 ### 요구 사항
 - Node.js (버전 14 이상 권장)
-- npm 또는 yarn
+- npm
 
 ### 프로젝트 클론
 ```git clone https://github.com/magok-developer/tooltip-practice.git```
 
 ### 의존성 설치
 - npm install
-  또는
-- yarn install
 
 ### 개발 서버 실행
 - npm start
-  또는
-- yarn start
 
 ## 🖥️ Tootip Component
 
