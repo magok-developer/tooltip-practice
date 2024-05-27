@@ -1,9 +1,9 @@
 import Tooltip from "../Tooltip";
-import "./Custom.css";
+import "./Delay.css";
 
-const Custom = () => {
+const Delay = () => {
   return (
-    <div className='custom-wrapper'>
+    <div className='delay-wrapper'>
       <Tooltip content='enter-delay 1s' direction='topLeft' enterDelay={1000}>
         <button className='tooltip-button'>enter-delay 1s</button>
       </Tooltip>
@@ -19,4 +19,4 @@ const Custom = () => {
   );
 };
 
-export default Custom;
+export default Delay;

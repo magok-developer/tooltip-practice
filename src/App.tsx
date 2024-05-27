@@ -1,10 +1,10 @@
 import "./App.css";
 import Basic from "./components/Basic/Basic";
 import OverFlow from "./components/OverFlow/OverFlow";
-import Custom from "./components/Custom/Custom";
+import Delay from "./components/Delay/Delay";
 import Alert from "./components/Alert/Alert";
-import Disabled from "./components/Disabled/Disabled";
 import Color from "./components/Color/Color";
+import Disabled from "./components/Disabled/Disabled";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       </div>
 
       <div className='wrapper'>
-        <Custom />
+        <Delay />
         <Alert />
       </div>
 
