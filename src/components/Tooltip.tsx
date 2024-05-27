@@ -43,7 +43,7 @@ const Tooltip: React.FC<TooltipProps> = ({
     top: 0,
   });
   const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
-  const [leaveDelayTimeoutId, setLeaveDelayTimeoutid] =
+  const [leaveDelayTimeoutId, setLeaveDelayTimeoutId] =
     useState<NodeJS.Timeout | null>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
   const targetRef = useRef<HTMLDivElement>(null);
@@ -87,7 +87,7 @@ const Tooltip: React.FC<TooltipProps> = ({
         clearTimeout(leaveTimeoutId);
       }, delay);
 
-      setLeaveDelayTimeoutid(leaveTimeoutId);
+      setLeaveDelayTimeoutId(leaveTimeoutId);
 
       return;
     }
@@ -186,7 +186,6 @@ const Tooltip: React.FC<TooltipProps> = ({
       zIndex: 9999,
       left: `${coords.left}px`,
       top: `${coords.top}px`,
-      height: 50,
     };
 
     return result;
@@ -211,7 +210,7 @@ const Tooltip: React.FC<TooltipProps> = ({
             onMouseEnter={handleMouseEnterTooltip}
             onMouseLeave={hideTooltip}
           >
-            <div>{content}</div>
+            <div onMouseEnter={handleMouseEnterTooltip}>{content}</div>
           </div>,
           document.body
         )}

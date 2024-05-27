@@ -1,57 +1,16 @@
 .App {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   height: 100vh;
 }
 
 .wrapper {
-  width: 200px;
-  margin: 0 auto;
-}
-
-.tooltip-container {
-  position: relative;
-  margin: 0 auto;
-  margin-top: 300px;
-  width: 225px;
-  height: 125px;
-  background: #eeeeee;
-}
-
-.tooltip-row {
-  position: absolute;
   display: flex;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
+  margin-top: 50px;
 }
 
-.tooltip-row.top {
-  top: -35px;
-}
-.tooltip-row.right {
-  flex-direction: column;
-  right: -100%;
-}
-.tooltip-row.bottom {
-  bottom: -100%;
-}
-.tooltip-row.left {
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: space-between;
-  right: 100%;
-}
-
-.tooltip-button {
-  padding: 10px 20px;
-  background-color: #20b2aa;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.tooltip-button:hover {
-  background-color: #178f84;
+.color {
+  gap: 16px;
 }

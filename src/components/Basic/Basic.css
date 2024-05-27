@@ -1,0 +1,38 @@
+.tooltip-container {
+  position: relative;
+}
+
+.basic-tooltip-row {
+  width: 220px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.basic-tooltip-column {
+  height: 120px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.basic-tooltip-row.top {
+  top: 0;
+}
+
+.basic-tooltip-column.right {
+  left: 220px;
+  top: 35px;
+}
+
+.basic-tooltip-row.bottom {
+  top: 155px;
+}
+
+.basic-tooltip-column.left {
+  left: -62px;
+  top: 35px;
+  align-items: end;
+}

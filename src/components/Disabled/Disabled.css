@@ -1,0 +1,14 @@
+.disabled-wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.disabled-text {
+  width: 80px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}

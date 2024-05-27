@@ -1,0 +1,47 @@
+.overflow {
+  overflow: auto;
+  margin-left: 400px;
+  width: 350px;
+  height: 200px;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.overflow-tooltip-row {
+  width: 220px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.overflow-tooltip-column {
+  height: 120px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overflow-tooltip-row.top {
+  top: 0;
+  left: 65px;
+}
+
+.overflow-tooltip-column.right {
+  left: 287px;
+  top: 35px;
+}
+
+.overflow-tooltip-row.bottom {
+  top: 155px;
+  left: 65px;
+}
+
+.overflow-tooltip-column.left {
+  left: 0;
+  top: 35px;
+  align-items: end;
+}

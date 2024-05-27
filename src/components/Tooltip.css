@@ -3,7 +3,19 @@
   color: white;
   padding: 5px;
   border-radius: 4px;
-  white-space: nowrap;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   font-size: 14px;
+}
+
+.tooltip-button {
+  padding: 10px 20px;
+  background-color: #20b2aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tooltip-button:hover {
+  background-color: #178f84;
 }
